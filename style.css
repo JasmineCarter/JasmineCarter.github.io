@@ -1,0 +1,99 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #D8D8D8;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(216,216,216);
+  border: 1px solid rgba(200,200,200); 
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #D8D8D8;
+}
+
+.header {
+	grid-column: 1/-1;
+	display: flex;
+	font-size: 50px;
+	justify-content: space-between;
+}
+
+#title {
+	font-size: 80px;
+	font-family:'Abril Fatface', serif;
+	
+
+}
+
+#subTitle{
+	font-size: 30px;
+	font-family:'Abril Fatface', serif;;
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+	width: 400px;
+	background-color: #D8D8D8;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+nav li a {
+	display: block;
+	color: #ff3366;
+	/*padding: 8px 16px;*/
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #E0E0E0;
+	color: black;
+}
+
+
+
+
+
+
+
+
+.footer {
+	grid-column: 1/-1;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #ff3366;
+
+
+
+}
+.fa { 
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+
+ }
+
+ .fa:hover {
+ 	opacity:0.7;
+ }
+
+ .fa-linkedin {
+  background: #D8D8D8;
+  color: white;
+  margin: .1em; 
+}
+
+.fa-github {
+  background: #D8D8D8;
+  color: white;
+  margin: .1em; 
+}
