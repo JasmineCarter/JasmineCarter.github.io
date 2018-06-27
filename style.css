@@ -43,7 +43,7 @@
 }
 .hero {
 	font-family: 'Encode Sans Condensed', serif;
-	background-image: url(https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98b1cd2ea86a7b4796275ef13aadafbf&auto=format&fit=crop&w=752&q=80);
+	background-image: url(https://images.unsplash.com/photo-1477327070293-75f15e291bb0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=728c0303945b65e3f0bc6f4f7d4db070&auto=format&fit=crop&w=750&q=80);
 	height: auto;
 	background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ ul{
 
 .projects {
 	grid-column: 1/-1;
-	
+
 	
 }
 
@@ -162,7 +162,7 @@ margin: 5px 2px;
 }
 
 .contact {
-	display: flex;
+/*	display: flex;*/
 }
 
 .content {
@@ -180,7 +180,3 @@ margin: 5px 2px;
 	margin:0px;
 }
 
-.copywright {
-	color: white;
-	font-size: 15px;
-}
