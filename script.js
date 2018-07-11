@@ -1,46 +1,55 @@
-const h4 = document.querySelector('h4');
-h4.addEventListener('mouseover', function (){
-  h4.classList.add('hover');
-})
-h4.addEventListener('mouseout', function (){
-  h4.classList.remove('hover');    
-});
+// var modal = document.getElementById('myModal');
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
-$(document).ready(function () {
+// const items = document.querySelectorAll('li');
 
-	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
-	$('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {		
-		$('#dialog-overlay, #dialog-box').hide();		
-		return false;
-	});
-	
-	// if user resize the window, call the same function again
-	// to make sure the overlay fills the screen and dialogbox aligned to center	
-	$(window).resize(function () {
-		
-		//only do it if the dialog box is not hidden
-		if (!$('#dialog-box').is(':hidden')) popup();		
-	});	
-	
-	
-});
+// for(let i=0; i<items.length; i++){
+//   let button = articles[i].querySelector('button');
+//   let para = articles[i].querySelector('p');
+  
+//   button.addEventListener('click', function(){
+//     articles[i].classList.toggle('expanded');
+//     button.innerHTML = articles[i].classList.contains('expanded') ?
+//       'Hide Details' : 'Show Details';
+//  });
+// }
+ const items = document.querySelectorAll('li');
 
-//Popup dialog
-function popup(message) {
-		
-	// get the screen height and width  
-	var maskHeight = $(document).height();  
-	var maskWidth = $(window).width();
-	
-	// calculate the values for center alignment
-	var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());  
-	var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
-	
-	// assign values to the overlay and dialog box
-	$('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
-	$('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-	
-	// display the message
-	$('#dialog-message').html(message);
-			
+for(let i=0; i<items.length; i++){
+	items[i].addEventListener('mouseover', function(){
+		this.style.fontSize = "200%"; 
+}); 
+items.addEventListener('mouseout', function(){
+	items.classList.remove('hover'); 
+}); 
 }
+
+
+h3.addEventListener('mouseout', function (){
+  h3.classList.remove('hover'); 
+
+const button = document.querySelector('button');
+const h2 = document.querySelector('h2');
+button.addEventListener('click', function(){
+  h2.classList.toggle('styled');
+});
+
+const h3 = document.querySelector('h3');
+h3.addEventListener('mouseover', function (){
+  h3.classList.add('hover');
+})
+h3.addEventListener('mouseout', function (){
+  h3.classList.remove('hover');    
+});
